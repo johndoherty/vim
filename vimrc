@@ -2,6 +2,10 @@
 call pathogen#infect()
 call pathogen#helptags()
 
+" Some basic setup
+syntax on
+set hlsearch
+
 set expandtab
 set shiftwidth=4
 set softtabstop=4
@@ -25,3 +29,9 @@ set foldnestmax=2
 " Cursor line highlight
 set cursorline
 hi CursorLine   cterm=NONE ctermbg=darkblue ctermfg=white
+
+" Change windows easier
+map <C-J> <C-W>j
+map <C-K> <C-W>k
+map <C-H> <C-W>h
+map <C-L> <C-W>l
