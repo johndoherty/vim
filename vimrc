@@ -2,6 +2,10 @@
 call pathogen#infect()
 call pathogen#helptags()
 
+" Some basic setup
+syntax on
+set hlsearch
+
 set expandtab
 set shiftwidth=4
 set softtabstop=4
@@ -21,3 +25,10 @@ map <leader>et :tabe <C-R>=expand("%:p:h") . "/" <CR>
 set foldmethod=indent
 nnoremap <Space> za
 set foldnestmax=2
+
+" Change windows easier
+map <C-J> <C-W>j
+map <C-K> <C-W>k
+map <C-H> <C-W>h
+map <C-L> <C-W>l
+
