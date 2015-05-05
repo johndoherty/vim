@@ -25,6 +25,9 @@ map <leader>et :tabe <C-R>=expand("%:p:h") . "/" <CR>
 set foldmethod=indent
 nnoremap <Space> za
 set foldnestmax=2
+autocmd FileType python setlocal foldmethod=indent foldnestmax=2
+autocmd FileType c setlocal foldmethod=syntax foldnestmax=1
+autocmd FileType cpp setlocal foldmethod=syntax foldnestmax=2
 
 " Cursor line highlight
 set cursorline
