@@ -27,6 +27,10 @@ nnoremap <Space> za
 set foldnestmax=2
 hi Folded cterm=NONE ctermbg=magenta ctermfg=white
 
+autocmd FileType python setlocal foldmethod=indent foldnestmax=2
+autocmd FileType c setlocal foldmethod=syntax foldnestmax=1
+autocmd FileType cpp setlocal foldmethod=syntax foldnestmax=2
+
 " Cursor line highlight
 set cursorline
 hi CursorLine   cterm=NONE ctermbg=darkblue ctermfg=white
