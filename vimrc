@@ -25,6 +25,7 @@ map <leader>et :tabe <C-R>=expand("%:p:h") . "/" <CR>
 set foldmethod=indent
 nnoremap <Space> za
 set foldnestmax=2
+hi Folded cterm=NONE ctermbg=magenta ctermfg=white
 
 " Cursor line highlight
 set cursorline
