@@ -33,7 +33,8 @@ autocmd FileType cpp setlocal foldmethod=syntax foldnestmax=2
 
 " Cursor line highlight
 set cursorline
-hi CursorLine   cterm=NONE ctermbg=darkblue ctermfg=white
+"hi CursorLine   cterm=NONE ctermbg=darkblue ctermfg=white
+hi CursorLine term=underline cterm=underline
 
 " Change windows easier
 map <C-J> <C-W>j
