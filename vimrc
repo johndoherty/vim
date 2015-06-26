@@ -41,3 +41,6 @@ map <C-J> <C-W>j
 map <C-K> <C-W>k
 map <C-H> <C-W>h
 map <C-L> <C-W>l
+
+" Always assume .md files are markdown
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
