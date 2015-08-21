@@ -44,3 +44,12 @@ map <C-L> <C-W>l
 
 " Always assume .md files are markdown
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+
+" Add clang-format
+"map <C-I> :pyf ~/.vim/clang-format.py<cr>
+"imap <C-I> <c-o>:pyf ~/.vim/clang-format.py<cr>
+
+"function FormatFile()
+"    let l:lines="all"
+"    pyf ~/.vim/clang-format.py
+"endfunction
