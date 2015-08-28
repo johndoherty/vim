@@ -10,3 +10,9 @@
 [submodule "bundle/syntax"]
 	path = bundle/syntax
 	url = https://github.com/octol/vim-cpp-enhanced-highlight.git
+[submodule "bundle/vim-signature"]
+	path = bundle/vim-signature
+	url = https://github.com/kshenoy/vim-signature.git
+[submodule "bundle/vim-minimap"]
+	path = bundle/vim-minimap
+	url = https://github.com/severin-lemaignan/vim-minimap

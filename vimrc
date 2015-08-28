@@ -2,6 +2,8 @@
 call pathogen#infect()
 call pathogen#helptags()
 
+" Remap escape
+
 " Some basic setup
 syntax on
 set hlsearch
@@ -31,6 +33,10 @@ autocmd FileType python setlocal foldmethod=indent foldnestmax=2
 autocmd FileType c setlocal foldmethod=syntax foldnestmax=1
 autocmd FileType cpp setlocal foldmethod=syntax foldnestmax=2
 
+" Setup signs column
+hi SignColumn ctermbg=black
+hi clear SignColumn
+
 " Cursor line highlight
 set cursorline
 "hi CursorLine   cterm=NONE ctermbg=darkblue ctermfg=white
@@ -45,6 +51,11 @@ map <C-L> <C-W>l
 " Always assume .md files are markdown
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
+" Make it easier to search for word under the cursor
+map \ *
+
+map gr :grep <C-r><C-w> * -r
+
 " Add clang-format
 "map <C-I> :pyf ~/.vim/clang-format.py<cr>
 "imap <C-I> <c-o>:pyf ~/.vim/clang-format.py<cr>
@@ -53,3 +64,5 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 "    let l:lines="all"
 "    pyf ~/.vim/clang-format.py
 "endfunction
+
+"set background=dark
