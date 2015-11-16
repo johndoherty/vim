@@ -78,10 +78,13 @@ let g:local_vimrc = ".local.vimrc"
 
 " For vim-airline
 set laststatus=2
-set timeoutlen=50
+"set timeoutlen=200
 
 " Camelcase motion
 map <S-W> <Plug>CamelCaseMotion_w
 map <S-B> <Plug>CamelCaseMotion_b
 map <S-E> <Plug>CamelCaseMotion_e
+
+" NERDTree
+map <C-n> :NERDTreeToggle<CR>
 
