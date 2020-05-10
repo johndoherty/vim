@@ -18,7 +18,8 @@ if $COLORTERM == 'gnome-terminal'
 endif
 
 " Set colorscheme
-colorscheme peachpuff
+" TODO: Find new theme to use
+" colorscheme peachpuff
 
 " Change the leader to comma
 let mapleader = ','
